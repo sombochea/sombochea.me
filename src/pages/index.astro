@@ -1,0 +1,37 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>👋 Hi, I'm Sambo!</h1>
+			<p>
+				I'm a software developer. I'm passionate about
+				creating tools and resources that help developers build better software.
+			</p>
+			<p>
+				I'm currently working as a staff engineer at <a href="https://www.cubetiqs.com">CUBETIQ Solution</a>,
+				where I'm building tools to help developers deploy and manage secure applications.
+			</p>
+			<p>
+				My experience includes working with a variety of technologies, including JavaScript, TypeScript, Node.js, React, GraphQL, Go, Java, Docker and more...
+			</p>
+			<p>
+				I'm also a writer and I write about software development, productivity, startups, and personal growth. You can find my articles on <a href="https://sombochea.medium.com">Medium</a>.
+			</p>
+			<p>
+				I'm interested in building startups and I'm always learning new things. I'm currently learning about machine learning, artificial intelligence and product management.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
